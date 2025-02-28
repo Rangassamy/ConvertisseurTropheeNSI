@@ -3,6 +3,12 @@ from tkinter import *
 from tkinter import ttk
 import tkinter.font as tkFont
 import clipboard
+import subprocess
+
+
+def retour_accueil():
+    root.destroy()  # Fermer la fenêtre du convertisseur
+    subprocess.Popen(["python", "sources/main.py"])  # Relancer l'accueil
 
 #Nolan
 def dec_hex(nombre):
@@ -254,5 +260,16 @@ i.configure(font = font2)
 i.place(x=347, y=160)
 
 root.configure(bg = color1[choixColor])
+
+# Ajouter un bouton pour revenir à l'accueil
+bouton_retour = Button(
+    root,
+    text="Retour à l'accueil",
+    font=("Arial", 14),
+    bg=color2[choixColor],
+    fg=color1[choixColor],
+    command=retour_accueil
+)
+bouton_retour.place(x=50, y=250)
 
 root.mainloop()

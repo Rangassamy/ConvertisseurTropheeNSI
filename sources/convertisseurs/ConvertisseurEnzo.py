@@ -1,8 +1,14 @@
 import tkinter as tk
+import subprocess
+
+def retour_accueil():
+    fenetre.destroy()  # Fermer la fenêtre du convertisseur
+    subprocess.Popen(["python", "sources/main.py"])  # Relancer l'accueil
+
 
 # Créer la fenêtre principale
 fenetre = tk.Tk()
-fenetre.geometry("192000x1000")  # Dimension de base de la fenêtre
+fenetre.geometry("19000x1080")  # Dimension de base de la fenêtre
 
 ######################################################################
 ############################## Label ##################################
@@ -222,6 +228,18 @@ for i, (texte, couleur) in enumerate(boutons.items()):
 
 for i in range(len(boutons)):
     fenetre.grid_columnconfigure(i, weight=1)
+
+
+# Ajouter un bouton pour revenir à l'accueil
+bouton_retour = tk.Button(
+    fenetre,
+    text="Retour à l'accueil",
+    font=("Arial", 14),
+    bg="lightgrey",
+    fg="black",
+    command=retour_accueil
+)
+bouton_retour.grid(row=5, column=0, columnspan=6, pady=20)
 
 def fermer_fenetre(event):
     fenetre.destroy()

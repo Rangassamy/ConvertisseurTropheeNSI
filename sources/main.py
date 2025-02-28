@@ -8,12 +8,15 @@ root.geometry("1200x600")
 
 # Fonction pour ouvrir les différentes interfaces
 def ouvrir_convertisseur_enzo():
+    root.withdraw()  # Masquer la fenêtre principale
     subprocess.Popen(["python", "sources/convertisseurs/ConvertisseurEnzo.py"])
 
 def ouvrir_convertisseur_nolan():
+    root.withdraw()  # Masquer la fenêtre principale
     subprocess.Popen(["python", "sources/convertisseurs/ConvertisseurNolan.py"])
 
 def ouvrir_convertisseur_erwan():
+    root.withdraw()  # Masquer la fenêtre principale
     subprocess.Popen(["python", "sources/convertisseurs/ConvertisseurErwan.py"])
 
 # Ajouter les boutons pour ouvrir chaque convertisseur

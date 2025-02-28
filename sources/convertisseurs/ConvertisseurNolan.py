@@ -1,4 +1,6 @@
 import tkinter as tk
+import subprocess
+
 
 class Application(tk.Tk):
     def __init__(self):
@@ -29,6 +31,11 @@ class Application(tk.Tk):
         
         # Mise à jour de la conversion en cas de changement
         self.entry_var.trace_add('write', self.convert)  # Chaque fois que le contenu de entry_var change, la fonction convert est appelée
+        tk.Button(self, text="Retour à l'accueil", command=self.retour_accueil, width=20, height=2).grid(row=2, column=0, columnspan=2, pady=10)
+
+    def retour_accueil(self):
+        self.destroy()  # Ferme la fenêtre du convertisseur
+        subprocess.Popen(["python", "sources/main.py"])  # Rouvre l'accueil
     
     def convert(self, *args):
         input_value = self.entry_var.get()
@@ -133,6 +140,7 @@ class ConverterSide:
 
     def get_base(self):
         return self.current_base
+
 
 
 # Fonctions de conversion
