@@ -1,0 +1,42 @@
+# Description du Projet - Trophées NSI
+
+## 1. Présentation générale du projet
+
+Ce projet est un convertisseur de bases numériques (binaire, décimal et hexadécimal) 
+développé en Python avec Tkinter. Il permet aux utilisateurs d’entrer une valeur 
+dans une base et d’obtenir immédiatement sa conversion dans les autres bases.
+
+L’objectif est de proposer un outil pédagogique simple et efficace permettant 
+de comprendre la relation entre différentes bases numériques.
+
+## 2. Organisation du travail en équipe
+
+Le projet a été divisé en plusieurs modules, chacun géré par un membre de l’équipe :
+- **Développement de l’interface graphique** : Création du menu principal et des interfaces.
+- **Implémentation des convertisseurs** : Développement des fonctions de conversion.
+- **Documentation et tests** : Rédaction des explications et mise en place des tests unitaires.
+
+Chaque membre a travaillé sur un convertisseur et nous avons fusionné les interfaces 
+dans une application unique.
+
+## 3. Étapes du développement
+
+1. **Planification et choix du langage** : Nous avons choisi Python et Tkinter.
+2. **Développement individuel des convertisseurs** : Chaque membre a codé son interface.
+3. **Fusion des interfaces** : Regroupement dans un menu principal.
+4. **Tests et validation** : Vérification du bon fonctionnement.
+5. **Rédaction de la documentation et finalisation**.
+
+## 4. Validation du projet et axes d’amélioration
+
+Nous avons testé le programme sur plusieurs valeurs d’entrée pour valider 
+la conversion correcte entre bases.
+
+Les améliorations possibles incluent :
+- Ajout d’autres bases (octal, base 64).
+- Ajout d’un mode sombre pour l’interface.
+- Optimisation du code avec une meilleure gestion des erreurs.
+
+---
+**Projet réalisé pour les Trophées NSI 2025**
+

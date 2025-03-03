@@ -1,0 +1,34 @@
+# Présentation du Projet - Trophées NSI
+
+## Objectif du Projet
+
+Créer une application conviviale permettant de convertir des nombres entre plusieurs bases 
+(binaire, décimal, hexadécimal) à l’aide d’une interface graphique en **Python (Tkinter)**.
+
+## Fonctionnalités Principales
+
+✔ Interface graphique intuitive avec un menu principal.  
+✔ Trois convertisseurs distincts fusionnés en une seule application.  
+✔ Affichage instantané des conversions entre bases.  
+✔ Organisation en modules pour une meilleure lisibilité.  
+
+## Technologies Utilisées
+
+🖥 **Langage** : Python 3  
+📦 **Framework** : Tkinter  
+📂 **Structure** : Modulaire, fichiers sources bien séparés  
+
+## Organisation de l'Équipe
+
+Chaque membre a développé un convertisseur spécifique, puis nous avons fusionné le code dans 
+un menu principal. Une partie de l’équipe s’est occupée des tests et de la documentation.
+
+## Améliorations Possibles
+
+🚀 Ajout de la conversion vers d’autres bases (octal, base 64).  
+🌙 Intégration d’un **mode sombre** pour une meilleure ergonomie.  
+⚡ Optimisation des performances et gestion avancée des erreurs.  
+
+---
+🔹 **Projet réalisé pour les Trophées NSI 2025** 🔹
+
