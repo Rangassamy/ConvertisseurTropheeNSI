@@ -241,7 +241,7 @@ label_sortie = Label(root, text = "", bg=color1[choixColor], fg=color2[choixColo
 label_sortie.place(x=200, y=225)
 
 copy_button = Button(root, text="COPIER", bg=color2[choixColor], fg=color1[choixColor], command=CopySortie)
-copy_button.place(x=125, y=250)
+copy_button.place(x=50, y=260)
 
 # LABEL UNI CONV
 font1 = tkFont.Font(family="Arial", size=47, weight="bold")
@@ -265,11 +265,11 @@ root.configure(bg = color1[choixColor])
 bouton_retour = Button(
     root,
     text="Retour à l'accueil",
-    font=("Arial", 14),
+    font=("Arial", 12),
     bg=color2[choixColor],
     fg=color1[choixColor],
     command=retour_accueil
 )
-bouton_retour.place(x=50, y=250)
+bouton_retour.place(x=300, y=260)
 
 root.mainloop()
