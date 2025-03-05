@@ -1,3 +1,5 @@
 # Dépendances du projet
-tkinter
-
+#tkinter
+#clipboard
+#subprocess
+#random

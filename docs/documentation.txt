@@ -1,0 +1,72 @@
+# Documentation du projet - Convertisseur de Bases
+
+Ce document a pour but d'expliquer le fonctionnement du code afin que n'importe qui puisse le reprendre et l'améliorer.
+
+## 📌 Structure du projet
+
+Le projet est organisé en plusieurs fichiers et dossiers :
+
+- `sources/` : Contient tout le code source du projet.
+  - `main.py` : Menu principal permettant de choisir entre les différents convertisseurs.
+  - `convertisseurs/` : Dossier contenant les fichiers des trois convertisseurs.
+    - `ConvertisseurEnzo.py` : Interface et logique du convertisseur d'Enzo.
+    - `ConvertisseurNolan.py` : Interface et logique du convertisseur de Nolan.
+    - `ConvertisseurErwan.py` : Interface et logique du convertisseur d'Erwan.
+- `docs/` : Documentation technique du projet.
+- `presentation.pdf` : Explication synthétique du projet.
+- `requirements.txt` : Liste des dépendances nécessaires pour exécuter le projet.
+
+## 🛠 Installation et exécution
+
+1. **Installer Python (si ce n'est pas déjà fait)**
+   - Télécharger et installer **Python 3.x** depuis [python.org](https://www.python.org/).
+
+2. **Installer les dépendances**
+   - Ouvrir un terminal et naviguer dans le dossier du projet :
+     ```bash
+     cd chemin/vers/le/projet
+     ```
+   - Installer les dépendances avec :
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Lancer l'application**
+   - Exécuter le menu principal :
+     ```bash
+     python sources/main.py
+     ```
+
+## 🖥 Fonctionnement des fichiers
+
+### `main.py` - Menu principal
+Ce fichier affiche un menu qui permet à l’utilisateur de choisir l’un des trois convertisseurs.  
+Il utilise `subprocess.Popen()` pour ouvrir les autres fichiers Python.
+
+### `ConvertisseurEnzo.py`, `ConvertisseurNolan.py`, `ConvertisseurErwan.py`
+Ces fichiers contiennent les interfaces et la logique des convertisseurs.  
+Chaque fichier suit la structure suivante :
+1. **Création de la fenêtre Tkinter** (`Tk()`)
+2. **Ajout des widgets** (`Label`, `Entry`, `Button`...)
+3. **Gestion des événements** (`command=fonction_conversion`)
+4. **Affichage des résultats** (`Label.config(text=...)`)
+
+### Fichiers de test (`test/`)
+Des tests unitaires peuvent être ajoutés dans ce dossier pour vérifier la conversion.
+
+## 🔧 Personnalisation et amélioration
+
+Voici quelques pistes pour modifier ou améliorer le projet :
+
+✔ **Changer les couleurs et le style** : Modifier les paramètres des widgets Tkinter.  
+✔ **Ajouter d'autres bases** : Modifier les fonctions de conversion pour inclure l'octal ou la base 64.  
+✔ **Optimiser le code** : Réduire la redondance entre les trois convertisseurs.  
+✔ **Améliorer l'interface** : Ajouter des icônes et un mode sombre.  
+✔ **Ajouter une gestion d'erreurs avancée** : Vérifier les entrées utilisateur et afficher des messages clairs.
+
+## 🎯 Conclusion
+
+Ce projet est conçu pour être modifiable facilement.  
+Si vous voulez ajouter des fonctionnalités ou corriger des erreurs, n'hésitez pas à explorer le code et à expérimenter !  
+
+Bonne programmation ! 🚀

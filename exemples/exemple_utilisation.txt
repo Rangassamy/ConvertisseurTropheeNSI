@@ -1,1 +1,0 @@
-Exemple d'utilisation du convertisseur avec une entrée et une sortie.
